@@ -9,7 +9,7 @@ public class ProdutoRs {
     private String data;
     private String preco;
     private String categoria;
-
+    private String barcode;
 
    public static ProdutoRs converter(Produto t) {
 
@@ -20,6 +20,7 @@ public class ProdutoRs {
        produto.setData(t.getData());
        produto.setPreco(t.getPreco());
        produto.setCategoria(t.getCategoria());
+       produto.setBarcode(t.getBarcode());
     
        return produto;
    }
@@ -48,5 +49,10 @@ public class ProdutoRs {
    public String getCategoria() { return categoria; }
    
    public void setCategoria(String categoria) { this.categoria = categoria; }
+
+
+   public String getBarcode() { return barcode; }
+   
+   public void setBarcode(String barcode) { this.barcode = barcode; }
 
 }

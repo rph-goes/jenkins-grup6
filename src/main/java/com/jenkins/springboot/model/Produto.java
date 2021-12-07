@@ -25,6 +25,9 @@ public class Produto{
    @Column(name = "categoria")
    private String categoria = "";
 
+   @Column(name="barcode")
+   private String barcode = "";
+
      
    public Long getId() { return id; }
    
@@ -49,6 +52,11 @@ public class Produto{
    public String getCategoria() { return categoria; }
    
    public void setCategoria(String categoria) { this.categoria = categoria; }
+   
+
+   public String getBarcode() { return barcode; }
+   
+   public void setBarcode(String barcode) { this.barcode = barcode; }
 
 }
 
