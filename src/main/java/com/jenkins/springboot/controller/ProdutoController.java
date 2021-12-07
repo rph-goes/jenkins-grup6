@@ -54,6 +54,7 @@ import org.springframework.beans.factory.annotation.Autowired;
         t.setData(produto.getData());
         t.setPreco(produto.getPreco());
         t.setCategoria(produto.getCategoria());
+        t.setBarcode(t.getBarcode());
         
 
         produtoRepository.save(t);
@@ -71,6 +72,7 @@ import org.springframework.beans.factory.annotation.Autowired;
             produtoSave.setData(produto.getData());
             produtoSave.setPreco(produto.getPreco());
             produtoSave.setCategoria(produto.getCategoria());
+            produtoSave.setBarcode(produto.getBarcode());
 
             produtoRepository.save(produtoSave);
         } else {
