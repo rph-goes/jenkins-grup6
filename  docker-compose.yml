@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  produtos:
+      # command: mvn clean install
+      build:
+        context: ./
+        dockerfile: ./Dockerfile
+      image: produtos/api
+
+      ports:
+        - "8089:8080"
+        - "5005:5005"
+      volumes:
+        - "./produtos:/home/produtos"
