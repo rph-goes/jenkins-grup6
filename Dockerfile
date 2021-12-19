@@ -15,7 +15,7 @@ ENV ADDITIONAL_OPTS=${ADDITIONAL_OPTS}
 
 WORKDIR /opt/spring_boot
 
-COPY /produtos/target/produtos-0.0.1-SNAPSHOT*.jar produtos-0.0.1-SNAPSHOT.jar
+COPY /target/produtos-0.0.1-SNAPSHOT*.jar produtos-0.0.1-SNAPSHOT.jar
 
 SHELL ["/bin/sh", "-c"]
 ENTRYPOINT ["java", "-jar", "produtos-0.0.1-SNAPSHOT.jar"]
