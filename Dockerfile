@@ -28,7 +28,7 @@
 FROM maven:3.6.3-openjdk-11 as build
 WORKDIR /app
 COPY . .
-RUN mvn install
+RUN mvn clean install
 
 FROM openjdk:11
 WORKDIR /app
