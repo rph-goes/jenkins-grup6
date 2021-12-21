@@ -47,17 +47,17 @@ class SpringbootApplicationTests {
     Assert.assertNotNull(produtoRepository.findById(1L));
   }
 
-  //@Test
-  //public void TestCreateExpectNull(){
-  //  Produto p = new Produto();
-  //  p.setId(1L);
-  //  p.setDescricao("Violão");
-  //  p.setData("21/12/2001");
-  //  p.setPreco("2110");
-  //  p.setCategoria("Musica");
-//
-  //  produtoRepository.save(p);
-  //  Assert.assertNull(produtoRepository.findById(1L));
-  //}
+  @Test
+  public void TestCreateExpectNull(){
+   Produto p = new Produto();
+   p.setId(1L);
+   p.setDescricao("Violão");
+   p.setData("21/12/2001");
+   p.setPreco("2110");
+   p.setCategoria("Musica");
+
+   produtoRepository.save(p);
+   Assert.assertNull(produtoRepository.findById(1L));
+  }
 
 }
